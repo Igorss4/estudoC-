@@ -44,17 +44,25 @@
 // Console.WriteLine(string.IsNullOrEmpty(name));//verifica se a string é nula ou vazia e retorna boolean
 // Console.WriteLine(string.IsNullOrWhiteSpace(name));//verifica se a string é nula ou é espaço em branco e retorna boolean
 // Console.WriteLine(string.Join(' ', names));//junta as strings de uma array ( primeiro parametro é o que aciona a junção, segundo o array)
-class Program
+        // int i = 10;
+        // if (int.TryParse("asds", out int x))//tenta a conversao de string a int, retornando verdadeiro atribui o valor a variavel
+        // {
+        //     Console.WriteLine("Sucesso!");
+        // } else {
+        //     Console.WriteLine("Erro!");
+        // }
+        // Console.WriteLine(x);
+        
+        class Program
 {
     static void Main()
     {
         int i = 10;
-        if (int.TryParse("asds", out int x))//tenta a conversao de string a int, retornando verdadeiro atribui o valor a variavel
-        {
-            Console.WriteLine("Sucesso!");
-        } else {
-            Console.WriteLine("Erro!");
-        }
-        Console.WriteLine(x);
+        long l = 10;
+
+        l = i;//long é maior por isso é possivel atribuir o valor de int em long mas nao o contrario
+        i = (int)l;//conversão explicita de int pra long(mas pode ser perdido dados por nao ter espaço no int)
+
+        string s = l.ToString();//metodo que converte outro tipo em variavel
     }
 }
