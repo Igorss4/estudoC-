@@ -59,33 +59,48 @@
 // i = (int)l;//conversão explicita de int pra long(mas pode ser perdido dados por nao ter espaço no int)
 
 // string s = l.ToString();//metodo que converte outro tipo em variavel
+//  int? i = 10;
+//         int? i2 = i;
+//         i2 = 20;
+
+//         Console.WriteLine(i.HasValue);//imprime se tem valor retorna boolean
+//         Console.WriteLine(i.Value);//retorna o valor inteiro
+//         Console.WriteLine(i.GetValueOrDefault(1));//retorna o valor, e se caso for nulo ele retorna o valor padrao setado
+
+//         i = null;
+
+//         if (i is not null)// se nao for nulo imprime nulo kkkkkkk
+//         {
+//             Console.WriteLine("Null");
+//         }
+
+//         Test t = new Test();
+//         t.x = 12;
+
+//         Test t2 = t;
+//         t2.x = 22;
+
+//         Console.WriteLine(t.x);
 
 class Program
 {
     static void Main()
     {
-        int? i = 10;
-        int? i2 = i;
-        i2 = 20;
+        string s = null;
 
-        Console.WriteLine(i.HasValue);//imprime se tem valor retorna boolean
-        Console.WriteLine(i.Value);//retorna o valor inteiro
-        Console.WriteLine(i.GetValueOrDefault(1));//retorna o valor, e se caso for nulo ele retorna o valor padrao setado
-
-        i = null;
-
-        if (i is not null)// se nao for nulo imprime nulo kkkkkkk
+        try
         {
-            Console.WriteLine("Null");
+            Console.WriteLine(s.Length);
+        }
+        catch (NullReferenceException exception)
+        {
+            Console.WriteLine($"Erro NullReferenceException! {exception.StackTrace}");
+        }
+        catch (Exception exception)
+        {
+            Console.WriteLine($"Erro: {exception.StackTrace}");
         }
 
-        Test t = new Test();
-        t.x = 12;
-
-        Test t2 = t;
-        t2.x = 22;
-
-        Console.WriteLine(t.x);
     }
 }
 
