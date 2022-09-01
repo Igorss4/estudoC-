@@ -1,0 +1,15 @@
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\bin\Debug\net6.0\treinoC#.exe
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\bin\Debug\net6.0\treinoC#.deps.json
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\bin\Debug\net6.0\treinoC#.runtimeconfig.json
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\bin\Debug\net6.0\treinoC#.dll
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\bin\Debug\net6.0\treinoC#.pdb
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.csproj.AssemblyReference.cache
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.AssemblyInfoInputs.cache
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.AssemblyInfo.cs
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.csproj.CoreCompileInputs.cache
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.dll
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\refint\treinoC#.dll
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.pdb
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\treinoC#.genruntimeconfig.cache
+C:\Users\igors\OneDrive\Área de Trabalho\Back\treinoC#\obj\Debug\net6.0\ref\treinoC#.dll
