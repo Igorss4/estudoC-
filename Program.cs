@@ -29,9 +29,14 @@ class Program
     {
         string[] names = { "Fred", "Maria", "Igor" };
 
-      foreach (string name in names)
-      {
-        Console.WriteLine(name);
-      }
+        if (string.Equals(names[0], "fred", StringComparison.OrdinalIgnoreCase))//metodo que ignora o CaseSensitive
+        {
+            Console.WriteLine("Igual");
+        }
+
+        foreach (string name in names)
+        {
+            Console.WriteLine(name);
+        }
     }
 }
