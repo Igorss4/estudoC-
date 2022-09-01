@@ -23,20 +23,32 @@
 // {
 //     Console.WriteLine("Você é menor de idade!");
 // }
+// string[] names = { "Fred", "Maria", "Igor" };
+
+//         if (string.Equals(names[0], "fred", StringComparison.OrdinalIgnoreCase))//metodo que ignora o CaseSensitive
+//         {
+//             Console.WriteLine("Igual");
+//         }
+
+//         foreach (string name in names)
+//         {
+//             Console.WriteLine(name);
+//         }
 class Program
 {
     static void Main()
     {
-        string[] names = { "Fred", "Maria", "Igor" };
+        string name = "Fred";
+        string[] names = {"Fred", "Machado"};
 
-        if (string.Equals(names[0], "fred", StringComparison.OrdinalIgnoreCase))//metodo que ignora o CaseSensitive
-        {
-            Console.WriteLine("Igual");
-        }
+        Console.WriteLine(name.Length);//imprime a quantidade de caracteres da string
+        Console.WriteLine(name.EndsWith("ed"));//verifica se a string termina com o valor setado e retorna boolean
+        Console.WriteLine(name.StartsWith("Fr"));//verifica se a string inicia com o valor setado e retorna boolean
+        Console.WriteLine(name.Contains("e"));//verifica se a string contem com o valor setado e retorna boolean
+        Console.WriteLine(name.IndexOf("r"));//retorna o indice do array da string(primeiro indice)(retorna -1 se nao existe)
+        Console.WriteLine(string.IsNullOrEmpty(name));//verifica se a string é nula ou vazia e retorna boolean
+        Console.WriteLine(string.IsNullOrWhiteSpace(name));//verifica se a string é nula ou é espaço em branco e retorna boolean
+        Console.WriteLine(string.Join(' ', names));//junta as strings de uma array ( primeiro parametro é o que aciona a junção, segundo o array)
 
-        foreach (string name in names)
-        {
-            Console.WriteLine(name);
-        }
     }
 }
