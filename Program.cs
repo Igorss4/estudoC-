@@ -34,21 +34,27 @@
 //         {
 //             Console.WriteLine(name);
 //         }
+// string name = "Fred";
+// string[] names = {"Fred", "Machado"};
+// Console.WriteLine(name.Length);//imprime a quantidade de caracteres da string
+// Console.WriteLine(name.EndsWith("ed"));//verifica se a string termina com o valor setado e retorna boolean
+// Console.WriteLine(name.StartsWith("Fr"));//verifica se a string inicia com o valor setado e retorna boolean
+// Console.WriteLine(name.Contains("e"));//verifica se a string contem com o valor setado e retorna boolean
+// Console.WriteLine(name.IndexOf("r"));//retorna o indice do array da string(primeiro indice)(retorna -1 se nao existe)
+// Console.WriteLine(string.IsNullOrEmpty(name));//verifica se a string é nula ou vazia e retorna boolean
+// Console.WriteLine(string.IsNullOrWhiteSpace(name));//verifica se a string é nula ou é espaço em branco e retorna boolean
+// Console.WriteLine(string.Join(' ', names));//junta as strings de uma array ( primeiro parametro é o que aciona a junção, segundo o array)
 class Program
 {
     static void Main()
     {
-        string name = "Fred";
-        string[] names = {"Fred", "Machado"};
-
-        Console.WriteLine(name.Length);//imprime a quantidade de caracteres da string
-        Console.WriteLine(name.EndsWith("ed"));//verifica se a string termina com o valor setado e retorna boolean
-        Console.WriteLine(name.StartsWith("Fr"));//verifica se a string inicia com o valor setado e retorna boolean
-        Console.WriteLine(name.Contains("e"));//verifica se a string contem com o valor setado e retorna boolean
-        Console.WriteLine(name.IndexOf("r"));//retorna o indice do array da string(primeiro indice)(retorna -1 se nao existe)
-        Console.WriteLine(string.IsNullOrEmpty(name));//verifica se a string é nula ou vazia e retorna boolean
-        Console.WriteLine(string.IsNullOrWhiteSpace(name));//verifica se a string é nula ou é espaço em branco e retorna boolean
-        Console.WriteLine(string.Join(' ', names));//junta as strings de uma array ( primeiro parametro é o que aciona a junção, segundo o array)
-
+        int i = 10;
+        if (int.TryParse("asds", out int x))//tenta a conversao de string a int, retornando verdadeiro atribui o valor a variavel
+        {
+            Console.WriteLine("Sucesso!");
+        } else {
+            Console.WriteLine("Erro!");
+        }
+        Console.WriteLine(x);
     }
 }
