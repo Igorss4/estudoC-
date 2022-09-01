@@ -64,9 +64,20 @@ class Program
 {
     static void Main()
     {
-        int i = 10;
-        int i2 = i;
+        int? i = 10;
+        int? i2 = i;
         i2 = 20;
+
+        Console.WriteLine(i.HasValue);//imprime se tem valor retorna boolean
+        Console.WriteLine(i.Value);//retorna o valor inteiro
+        Console.WriteLine(i.GetValueOrDefault(1));//retorna o valor, e se caso for nulo ele retorna o valor padrao setado
+
+        i = null;
+
+        if (i is not null)// se nao for nulo imprime nulo kkkkkkk
+        {
+            Console.WriteLine("Null");
+        }
 
         Test t = new Test();
         t.x = 12;
